@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BBC latest -news</title>
+    <!-- Css do bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Cdn AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- Css externo -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- fontes google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Folha de estilos interna -->
+    <style>
+    </style>
+
+</head>
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="noticias as notc">
+
+        <div class="pesquisa"><input type="text" ng-model="criterio">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn dropdown-toggle menudropdown" style="margin-top:-40px;margin-left:400%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">em todo site</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Notícias(34613)</a>
+                        <a class="dropdown-item" href="#">Vídeos(10000)</a>
+                        <a class="dropdown-item" href="#">Fotos(8000)</a>
+                        <a class="dropdown-item" href="#">Blogs(2000)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="pesq">Pesquisa avançada <img src="img/icon-arrow-down.svg"></p>
+        <main class="row">
+            <div class="col-2">
+                <div class="retangulo">
+                    <p class="resultados">{{resultados.length}}<br>resultados para<br> "{{criterio}}"</p>
+                </div>
+            </div>
+            <div class="col col-md" >
+                <!-- ng repeat faz buscar nos nomes, limitTo limita resultados na tela, filter pega o critério lá da busca e exibe na tela -->
+                <section class="row"  ng-repeat='x in names | limitTo: limit | filter:criterio as resultados'>
+
+                    <img class=" imagem" align="left" ng-src="{{x.imagem}}">
+
+                    <article class="col-12 col-md">
+                        <a href={{x.url}}>
+                            <p class="titulo">{{x.titulo}}</p>
+                            <p class="desc">{{x.descricao}}</p>
+                        </a>
+                        <p class="datahora">{{x.hora}} - {{x.data}} - Compartilhar <img src="img/facebook-box.svg" class="facebook-box">
+                            <img src="img/twitter-box.svg" class="twitter-box">
+                        </p>
+                        <hr class="divisor">
+                    </article>    
+                </section>
+                <input type="button" id="btnLoadMore" value="Ver mais matérias" class="verMais" ng-click="incrementLimit()" />
+            
+    </div>
+    </main>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

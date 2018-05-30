@@ -1,0 +1,218 @@
+ * {
+     outline: 0;
+ }
+
+ body {
+     font-family: Roboto;
+ }
+
+ .imagem {
+     width: 215px;
+     height: 144px;
+     padding: 1px 1px 1px;
+     display: block!important;
+ }
+
+ p {
+     margin-bottom: 0;
+     display: block!important;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ a:hover {
+     text-decoration: none;
+     color: black;
+ }
+
+ .titulo {
+     width: 330px;
+     height: 50px;
+     font-family: Merriweather;
+     font-size: 20px;
+     font-weight: bold;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: left;
+     color: #666666;
+     margin-bottom: 2rem;
+ }
+
+ .desc {
+     width: 330px;
+     height: 19px;
+     font-family: Roboto;
+     font-size: 14px;
+     font-weight: 300;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: left;
+     color: #666666;
+     margin-top: 2%;
+     margin-bottom: 5%;
+ }
+
+ .datahora {
+     font-family: Roboto;
+     font-size: 10px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: left;
+     color: #666666;
+     margin-top: 3rem;
+ }
+
+ .facebook-box {
+     width: 10px;
+     height: 10px;
+     object-fit: contain;
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+
+ .twitter-box {
+     width: 10px;
+     height: 10px;
+     object-fit: contain;
+ }
+
+ article {
+     flex-grow: 0!important;
+ }
+
+ .verMais {
+     border-radius: 0;
+     color: black;
+     background-color: #fff;
+     border: none;
+     border-top: 5px solid black;
+     border-bottom: 1px solid black;
+     margin-bottom: 1rem;
+     font-family: Merriweather;
+     font-size:20px;
+     font-weight: bold;
+ }
+
+ .pesquisa {
+     width: 68%;
+     height: 40px;
+     padding-left: 3rem;
+     background-image: url(../img/icon-search.svg);
+     background-position: 1rem;
+     background-repeat: no-repeat;
+     margin-top: 2rem;
+     background-color: #fafafa;
+     border: solid 1px #e6e6e6;
+     border-radius: 4px;
+ }
+
+ input {
+     width: 70%;
+     height: 40px;
+     border: none;
+     background-color: transparent;
+     color: #666666;
+     font-family: Roboto;
+     font-size: 14px;
+     font-weight: 300;
+ }
+
+ .btn {
+     margin-left: -20%;
+     margin-top: -.45rem;
+     background-color: #fff;
+     outline: 0;
+ }
+
+ .btn:active {
+     outline: 0!important;
+ }
+
+ .dropdown-item:active {
+     background-color: white;
+     color: black;
+ }
+
+ .dropdown-item:hover {
+     background-color: white;
+     color: black;
+ }
+
+ .btn:focus {
+     box-shadow: 0px 0px white;
+     ;
+ }
+
+ .dropdown-menu {
+     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+     border-top: none;
+     margin-top: -3px;
+     border-radius: 1px!important;
+ }
+
+ .retangulo {
+     width: 100px;
+     height: 57px;
+     width: 35%;
+     height: 5px;
+     background-color: #1a1a1a;
+     margin-top: 1rem;
+     font-family: Roboto;
+     color: #1a1a1a;
+ }
+
+ .icon-arrow-down {
+     width: 10px;
+     height: 8px;
+     object-fit: contain;
+ }
+
+ main {
+     margin-top: 2rem;
+ }
+
+ .ajuste {
+     padding-left: 0px!important;
+ }
+
+ .resultados {
+     padding-top: 1rem;
+ }
+
+ .pesq {
+     padding-top: 1rem;
+ }
+
+ .caixa {
+     background-color: black;
+     width: 75%;
+ }
+
+ .menudropdown {
+     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+     background-color: #ffffff;
+     border-style: solid;
+     border-width: 1px;
+     border-image-source: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
+     border-image-slice: 1;
+     border-radius: 0;
+ }
+
+ .dropdown-item {
+     padding: 5px;
+     font-family: Roboto;
+ }
+
+ .divisor {
+     margin-left: -14rem;
+ }
